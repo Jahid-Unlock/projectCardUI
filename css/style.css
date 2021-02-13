@@ -1,0 +1,74 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    padding: 200px 0;
+}
+
+
+/*================copyable CSS================*/
+.project-row{
+    background: #f1f4f9;
+    position: relative;
+}
+
+.project-row::before{
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 6px;
+    background: #125dd6;
+}
+.project-row:nth-child(2)::before{
+    background: #9ad612;
+}
+.project-row:nth-child(3)::before{
+    background: #271243;
+}
+
+.single-project{
+    
+}
+
+.project-info{
+   display: flex;
+    flex-direction: column;
+    padding: 25px;
+}
+
+.project-social{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+.project-link a{
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 6px 12px;
+    background:   #ef9a25;
+    color: white;
+    text-transform: uppercase;
+}
+
+.project-link a:last-child{
+    background: white;
+    color:black;
+    margin-left: 15px;
+}
+.project-link a i{
+    margin-left: 5px;
+}
+.project-tags span{
+    padding: 3px 12px;
+    background: white;
+    margin-right: 10px;
+}
+.project-tags span:first-child{
+    margin-right: 0;
+}
